@@ -1,10 +1,18 @@
 <html>
 <head>
+<script>
+var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+</script>
 <title>
 FEE STRUCTURE-ARSHI KID'S COTTAGE
 </title>
 <link rel="icon" href="favicon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=1024">
  <style>
 .glow {
   font-size:60px;
