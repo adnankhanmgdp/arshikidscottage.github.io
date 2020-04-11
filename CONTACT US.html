@@ -124,10 +124,34 @@ background-color: red;
   background-color: #4CAF50; /* Add a green color to the "active/current" link */
   color: white;
 }
+.alert {
+  padding: 20px;
+  background-color: yellow;
+  font-size:30px;
+  color: CadetBlue;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: orange;
+  font-weight: bold;
+  float: right;
+  font-size: 35px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
 </style>
 </head>
 <body style="background-color: #ff6666; height:1000px">
-
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+ <center> <strong>THE SCHOOL IS TEMPORARILY CLOSED DUE TO COVID-19 PANDEMIC</strong></center>
+</div>
 <h1 
 style="
 border:solid #FFFFFF;
@@ -160,7 +184,7 @@ ADMISSION&nbsp OPEN
 FOR CLASSES: PLAYGROUP, NURSERY, K.G., PREP.
 </div>
 <font class="rainbow">
-(NO&nbsp ADMISSION&nbsp FEE&nbsp BEFORE&nbsp 20TH&nbsp MARCH)
+(NO&nbsp ADMISSION&nbsp FEE&nbsp BEFORE&nbsp 31ST&nbsp JULY)
 </font>
 </center>
 </div>
